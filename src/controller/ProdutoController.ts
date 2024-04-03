@@ -21,7 +21,7 @@ export class ProdutoController implements ProdutoRepository{
         if(buscaproduto !== null)
             buscaproduto.visualizar()
         else
-            console.log("\nproduto não foi Encontrada!")
+            console.log("\nproduto não foi Encontrado!")
     }
 
     // Método para Listar os dados de todas as produtos
@@ -37,7 +37,7 @@ export class ProdutoController implements ProdutoRepository{
     // na Collection listaprodutos
     cadastrar(produto: Produto): void {
         this.listaProdutos.push(produto);
-        console.log("A produto foi adicionada!")
+        console.log("A produto foi adicionado!")
     }
 
     // Método para atualizar os dados de uma produto
@@ -47,9 +47,9 @@ export class ProdutoController implements ProdutoRepository{
 
         if(buscaProduto !== null){
             this.listaProdutos[this.listaProdutos.indexOf(buscaProduto)] = produto;
-            console.log(`A produto número ${produto.id} foi Atualizada com êxito!`)
+            console.log(`A produto número ${produto.id} foi Atualizado com êxito!`)
         }else
-            console.log("\nproduto não foi Encontrada!")
+            console.log("\nproduto não foi Encontrado!")
     }
 
     // Método para deletar uma produto
@@ -59,9 +59,9 @@ export class ProdutoController implements ProdutoRepository{
 
         if(buscaProduto !== null){
             this.listaProdutos.splice(this.listaProdutos.indexOf(buscaProduto), 1)
-            console.log(`A produto número ${id} foi Excluída com êxito!`)
+            console.log(`A produto número ${id} foi Excluído com êxito!`)
         }else
-            console.log("\nproduto não foi Encontrada!")
+            console.log("\nproduto não foi Encontrado!")
     }
 
 
